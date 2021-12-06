@@ -12,7 +12,7 @@ img {
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
-	grid-template-rows: 80px minmax(40vw, 55vw) minmax(40vw, 55vw) ;
+	grid-template-rows: 80px minmax(52vw, 75vw) minmax(52vw, 75vw) ;
 }
 
 .contenedorPrincipalCabecera{
@@ -114,7 +114,7 @@ img {
 }
 
 .contenedorJuegos {
-	height: 1%; width: 90vw;
+	height: 1; width: 90vw;
 	margin:  0% auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
@@ -180,4 +180,103 @@ img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
+}
+
+.contenedorInformacion {
+	height: 60px; width: 90vw;
+	margin:  0% auto;	/* Alinea el contenedor en el centro de la ventana */
+	display: grid;
+
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 100% 65%;
+}
+
+.Infojuego1 {
+	grid-column-start: 1;	grid-column-end: 2;
+	grid-row-start: 1; grid-row-end: 2;
+	width: 99%; height: 99%;
+	text-align: center;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Preciojuego1 {
+	grid-column-start: 1;	grid-column-end: 2;
+	grid-row-start: 2; grid-row-end: 3;
+	width: 99%; height: 99%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Infojuego2 {
+	grid-column-start: 2;	grid-column-end: 3;
+	grid-row-start: 1; grid-row-end: 2;
+	width: 99%; height: 99%;
+	text-align: center;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Preciojuego2 {
+	grid-column-start: 2;	grid-column-end: 3;
+	grid-row-start: 2; grid-row-end: 3;
+	width: 99%; height: 99%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Infojuego3 {
+	grid-column-start: 3;	grid-column-end: 4;
+	grid-row-start: 1; grid-row-end: 2;
+	width: 99%; height: 99%;
+	text-align: center;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Preciojuego3 {
+	grid-column-start: 3;	grid-column-end: 4;
+	grid-row-start: 2; grid-row-end: 3;
+	width: 99%; height: 99%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Infojuego4 {
+	grid-column-start: 4;	grid-column-end: 5;
+	grid-row-start: 1; grid-row-end: 2;
+	width: 99%; height: 99%;
+	text-align: center;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Preciojuego4 {
+	grid-column-start: 4;	grid-column-end: 5;
+	grid-row-start: 2; grid-row-end: 3;
+	width: 99%; height: 99%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Infojuego5 {
+	grid-column-start: 5;	grid-column-end: 6;
+	grid-row-start: 1; grid-row-end: 2;
+	width: 99%; height: 99%;
+	text-align: center;
+	background-color: rgba(210, 210, 210, 0.7);
+}
+
+.Preciojuego5 {
+	grid-column-start: 5;	grid-column-end: 6;
+	grid-row-start: 2; grid-row-end: 3;
+	width: 99%; height: 99%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(210, 210, 210, 0.7);
 }
