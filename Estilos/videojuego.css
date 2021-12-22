@@ -12,7 +12,7 @@ img {
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
-	grid-template-rows: 80px minmax(65vw, 75vw);
+	grid-template-rows: 80px minmax(85vw, 100vw) minmax(70vw, 100vw);
 }
 
 .contenedorPrincipalCabecera{
@@ -23,6 +23,11 @@ img {
 .contenedorPrincipalInformacionVideojuego{
 	grid-row-start: 2;	grid-row-end: 3;
 	background-color: rgb(244, 249, 182);
+}
+
+.contenedorPrincipalTrailerVideojuego{
+	grid-row-start: 3;	grid-row-end: 4;
+	background-color: rgb(208, 172, 83);
 }
 
 /**** Clases para la Cabecera ****/
@@ -130,11 +135,11 @@ img {
 
 .contenedorInformacionVideojuego {
 	width: 1; height: 100vw;
-	margin: 65px 65px auto;	/* Alinea el contenedor en el centro de la ventana */
+	margin: 75px 75px auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
 	grid-template-columns: 20% 20% 20% 20% 20%;
-	grid-template-rows: 15% 15% 15% 15%;
+	grid-template-rows: 15% 15% 15% 15% 15%;
 }
 
 .imagenVideojuego{
@@ -154,7 +159,7 @@ img {
 	grid-column-start: 3;	grid-column-end: 6;
 	grid-row-start: 1;	grid-row-end: 2;
 	width: 99%; height: 99%;
-	margin-left: 15px;
+	margin-left: 35px;
 	font-size: 25px;
 }
 
@@ -171,5 +176,93 @@ img {
 	grid-column-start: 3;	grid-column-end: 6;
 	grid-row-start: 2;	grid-row-end: 3;
 	width: 99%; height: 99%;
-	margin-left: 15px;
+	margin-left: 35px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.precioVideojuego>input {
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
+	font-size: 30px;
+	text-align: right;
+	width: 140px; height: 60px;
+}
+
+.desarrolladorVideojuego{
+	grid-column-start: 3;	grid-column-end: 6;
+	grid-row-start: 3;	grid-row-end: 4;
+	width: 99%; height: 99%;
+	margin-left: 35px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.desarrolladorVideojuego>input {
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
+	font-size: 30px;
+	text-align: left;
+	width: 100%; height: 60px;
+}
+
+.plataformaVideojuego{
+	grid-column-start: 3;	grid-column-end: 6;
+	grid-row-start: 4;	grid-row-end: 5;
+	width: 99%; height: 99%;
+	margin-left: 35px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.plataformaVideojuego>input {
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
+	font-size: 30px;
+	text-align: left;
+	width: 100%; height: 60px;
+}
+
+.cantidadVideojuego{
+	grid-column-start: 3;	grid-column-end: 6;
+	grid-row-start: 5;	grid-row-end: 6;
+	width: 99%; height: 99%;
+	margin-left: 35px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/**** Clases para la información del videojuego ****/
+
+.contenedorTrailerVideojuego {
+	width: 1; height: 40vw;
+	margin: 35px 35px auto;	/* Alinea el contenedor en el centro de la ventana */
+	display: grid;
+}
+
+.contenedorTrailerVideojuego>h2 {
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+	text-align: center;
+}
+
+.contenedorTrailerVideojuego>iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70vw; height: 40vw;
+}
+
+.contenedorTrailerVideojuego>output {
+	font-size: 20px;
+	text-align: center;
+}
+
+.contenedorTrailerVideojuego>audio{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
 }
