@@ -1,0 +1,175 @@
+/**** Hoja de estilo para la página videojuego.html ****/
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/**** Clases contenedor principal ****/
+
+.contenedorPrincipal {
+	width: 100vw; height: 99vh;
+	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
+	display: grid;
+
+	grid-template-rows: 80px minmax(65vw, 75vw);
+}
+
+.contenedorPrincipalCabecera{
+	grid-row-start: 1;	grid-row-end: 2;
+	background-color: rgb(160, 160, 160);
+}
+
+.contenedorPrincipalInformacionVideojuego{
+	grid-row-start: 2;	grid-row-end: 3;
+	background-color: rgb(244, 249, 182);
+}
+
+/**** Clases para la Cabecera ****/
+
+.contenedorCabecera {
+	width: 99vw; height: 80px;
+	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
+	display: grid;
+
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.logoPaginaWeb {
+	grid-column-start: 1;	grid-column-end: 2;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+}
+
+.logoPaginaWeb>img {	/* Ajusta una imagen dentro de la celda del contenedor para la cabecera */
+	width: 100%;
+	max-height: 80px;
+}
+
+.opcionXbox {
+	grid-column-start: 2;	grid-column-end: 3;
+	width: 100%; height: 100%; max-height: 80px;
+	background-color: green;
+}
+
+.opcionXbox>a {
+	margin: 20px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+}
+
+.opcionPlayStation {
+	grid-column-start: 3;	grid-column-end: 4;
+	width: 100%; height: 100%; max-height: 80px;
+	background-color: blue;
+}
+
+.opcionPlayStation>a {
+	margin: 20px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+}
+
+.opcionNintendo {
+	grid-column-start: 4;	grid-column-end: 5;
+	width: 100%; height: 100%; max-height: 80px;
+	background-color: red;
+}
+
+.opcionNintendo>a {
+	margin: 20px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+}
+
+.opcionInicio {
+	grid-column-start: 5;	grid-column-end: 6;
+	width: 100%; height: 100%; max-height: 80px;
+}
+
+.opcionInicio>a {
+	margin: 20px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+}
+
+.subTitulo>h2 {
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+	text-align: center;
+}
+
+/**** Clases para la información del videojuego ****/
+
+.contenedorInformacionVideojuego {
+	width: 1; height: 100vw;
+	margin: 65px 65px auto;	/* Alinea el contenedor en el centro de la ventana */
+	display: grid;
+
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 15% 15% 15% 15%;
+}
+
+.imagenVideojuego{
+	grid-column-start: 1;	grid-column-end: 3;
+	grid-row-start: 1;	grid-row-end: 5;
+	width: 99%; height: 99%;
+	border:  2px groove gray;
+}
+
+.imagenVideojuego>img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.nombreVideojuego{
+	grid-column-start: 3;	grid-column-end: 6;
+	grid-row-start: 1;	grid-row-end: 2;
+	width: 99%; height: 99%;
+	margin-left: 15px;
+	font-size: 25px;
+}
+
+.nombreVideojuego>input {
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%; height: 50%;
+}
+
+.precioVideojuego{
+	grid-column-start: 3;	grid-column-end: 6;
+	grid-row-start: 2;	grid-row-end: 3;
+	width: 99%; height: 99%;
+	margin-left: 15px;
+}

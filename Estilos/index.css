@@ -1,14 +1,14 @@
-/* Hoja de estilo para el sitio Web */
+/**** Hoja de estilo para la página index.html ****/
 
 img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
-/**** Definición de Clases ****/
+/**** Clases contenedor principal ****/
 
 .contenedorPrincipal {
-	width: 99vw; height: 99vh;
+	width: 100vw; height: 99vh;
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
@@ -30,6 +30,8 @@ img {
 	background-color: rgb(208, 172, 83);
 }
 
+/**** Clases para la Cabecera ****/
+
 .contenedorCabecera {
 	width: 99vw; height: 80px;
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
@@ -45,8 +47,7 @@ img {
 	align-content: center;
 }
 
-/* Ajusta una imagen dentro de la celda del contenedor para la cabecera */
-.logoPaginaWeb>img {
+.logoPaginaWeb>img {	/* Ajusta una imagen dentro de la celda del contenedor para la cabecera */
 	width: 100%;
 	max-height: 80px;
 }
@@ -105,6 +106,23 @@ img {
 	font-family: Gill Sans, sans-serif;
 }
 
+.opcionInicio {
+	grid-column-start: 5;	grid-column-end: 6;
+	width: 100%; height: 100%; max-height: 80px;
+}
+
+.opcionInicio>a {
+	margin: 20px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+}
+
 .subTitulo>h2 {
 	color: blue;
 	font-size: 30px;
@@ -113,18 +131,19 @@ img {
 	text-align: center;
 }
 
+/**** Clases para el listado de videojuegos ****/
+
 .contenedorJuegos {
 	height: 1; width: 90vw;
 	margin:  0% auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
 	grid-template-columns: 20% 20% 20% 20% 20%;
-	background-color: rgba(210, 210, 210, 0.7);
 }
 
 .juego1 {
 	grid-column-start: 1;	grid-column-end: 2;
-	width: 99%; height: 99%;
+	width: 96%; height: 99%;
 	border:  2px groove gray;
 }
 
@@ -136,7 +155,7 @@ img {
 
 .juego2 {
 	grid-column-start: 2;	grid-column-end: 3;
-	width: 99%; height: 99%;
+	width: 96%; height: 99%;
 	border:  2px groove gray;
 }
 
@@ -148,7 +167,7 @@ img {
 
 .juego3 {
 	grid-column-start: 3;	grid-column-end: 4;
-	width: 99%; height: 99%;
+	width: 96%; height: 99%;
 	border:  2px groove gray;
 }
 
@@ -160,7 +179,7 @@ img {
 
 .juego4 {
 	grid-column-start: 4;	grid-column-end: 5;
-	width: 99%; height: 99%;
+	width: 96%; height: 99%;
 	border:  2px groove gray;
 }
 
@@ -172,7 +191,7 @@ img {
 
 .juego5 {
 	grid-column-start: 5;	grid-column-end: 6;
-	width: 99%; height: 99%;
+	width: 96%; height: 99%;
 	border:  2px groove gray;
 }
 
@@ -181,6 +200,8 @@ img {
 	width: 100%;
 	height: 100%;
 }
+
+/**** Clases para la información de cada juego en la lista ****/
 
 .contenedorInformacion {
 	height: 60px; width: 90vw;
@@ -194,7 +215,7 @@ img {
 .Infojuego1 {
 	grid-column-start: 1;	grid-column-end: 2;
 	grid-row-start: 1; grid-row-end: 2;
-	width: 99%; height: 99%;
+	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
 }
@@ -202,7 +223,7 @@ img {
 .Preciojuego1 {
 	grid-column-start: 1;	grid-column-end: 2;
 	grid-row-start: 2; grid-row-end: 3;
-	width: 99%; height: 99%;
+	width: 97%; height: 99%;
 	text-align: center;
 	font-weight: bold;
 	color: red;
@@ -212,7 +233,7 @@ img {
 .Infojuego2 {
 	grid-column-start: 2;	grid-column-end: 3;
 	grid-row-start: 1; grid-row-end: 2;
-	width: 99%; height: 99%;
+	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
 }
@@ -220,7 +241,7 @@ img {
 .Preciojuego2 {
 	grid-column-start: 2;	grid-column-end: 3;
 	grid-row-start: 2; grid-row-end: 3;
-	width: 99%; height: 99%;
+	width: 97%; height: 99%;
 	text-align: center;
 	font-weight: bold;
 	color: red;
@@ -230,7 +251,7 @@ img {
 .Infojuego3 {
 	grid-column-start: 3;	grid-column-end: 4;
 	grid-row-start: 1; grid-row-end: 2;
-	width: 99%; height: 99%;
+	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
 }
@@ -238,7 +259,7 @@ img {
 .Preciojuego3 {
 	grid-column-start: 3;	grid-column-end: 4;
 	grid-row-start: 2; grid-row-end: 3;
-	width: 99%; height: 99%;
+	width: 97%; height: 99%;
 	text-align: center;
 	font-weight: bold;
 	color: red;
@@ -248,7 +269,7 @@ img {
 .Infojuego4 {
 	grid-column-start: 4;	grid-column-end: 5;
 	grid-row-start: 1; grid-row-end: 2;
-	width: 99%; height: 99%;
+	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
 }
@@ -256,7 +277,7 @@ img {
 .Preciojuego4 {
 	grid-column-start: 4;	grid-column-end: 5;
 	grid-row-start: 2; grid-row-end: 3;
-	width: 99%; height: 99%;
+	width: 97%; height: 99%;
 	text-align: center;
 	font-weight: bold;
 	color: red;
@@ -266,7 +287,7 @@ img {
 .Infojuego5 {
 	grid-column-start: 5;	grid-column-end: 6;
 	grid-row-start: 1; grid-row-end: 2;
-	width: 99%; height: 99%;
+	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
 }
@@ -274,7 +295,7 @@ img {
 .Preciojuego5 {
 	grid-column-start: 5;	grid-column-end: 6;
 	grid-row-start: 2; grid-row-end: 3;
-	width: 99%; height: 99%;
+	width: 97%; height: 99%;
 	text-align: center;
 	font-weight: bold;
 	color: red;

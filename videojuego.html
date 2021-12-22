@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Estilos/videojuego.css">
+	<title> MaestroGamer.com </title>
+</head>
+<meta charset="UTF-8"> <!-- Corrige errores de caracteres con acentos -->
+
+<body onload="cargarVideojuego()">
+
+<div class="contenedorPrincipal">
+	<!-- Cabecera de la página -->
+	<div class="contenedorPrincipalCabecera">
+		
+		<div class="contenedorCabecera">
+			<div class="logoPaginaWeb">
+				Integrantes <br>
+				- Flores Gómez Jessica Victoria <br>
+				- Ramírez Martínez Humberto <br>
+				- Velázquez de León Lavarrios Alvar
+			</div>
+
+			<div class="opcionXbox"> <a href="Xbox.html" class="link"> Xbox </a>  </div>
+			<div class="opcionPlayStation"> <a href="PlayStation.html" class="link"> PlayStation </a> </div>
+			<div class="opcionNintendo"> <a href="Nintendo.html" class="link"> Nintendo </a> </div>
+			<div class="opcionInicio"> <a href="index.html" class="link"> Inicio </a> </div>
+		</div>
+	</div>
+
+	<!-- Información del videojuego -->
+	<div class="contenedorPrincipalInformacionVideojuego">
+		<div class="contenedorInformacionVideojuego">
+			<div class="imagenVideojuego">
+				<img id="imagen" src="Imágenes/Forza Horizon 5.jpg">
+			</div>
+
+			<div class="nombreVideojuego">
+				<label> </label><input type="text" name="nombreVideojuego" id="nombre" readonly> <br>
+			</div>
+
+			<div class="precioVideojuego">
+				<label> Precio: </label><input type="text" name="precioVideojuego" id="precio" readonly> <label> MXN </label> <br>
+			</div>
+		</div>
+	</div>
+
+	<!--form name="Formulario" method="get">
+		<label> Nombre </label><input type="text" name="nombreVideojuego" id="nombre" readonly> <br>
+		<label> Precio $ </label><input type="number" name="precioVideojuego" id="precio" readonly> <label> MXN </label> <br>
+	</form-->
+
+</div>
+<br>
+
+<script type=text/javascript src="Scripts/videojuego.js"> </script>
+</body>
+</html>
