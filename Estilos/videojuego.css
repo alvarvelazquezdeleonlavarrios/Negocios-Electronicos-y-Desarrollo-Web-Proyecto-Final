@@ -123,14 +123,6 @@ img {
 	font-family: Gill Sans, sans-serif;
 }
 
-.subTitulo>h2 {
-	color: blue;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: Gill Sans, sans-serif;
-	text-align: center;
-}
-
 /**** Clases para la información del videojuego ****/
 
 .contenedorInformacionVideojuego {
@@ -230,6 +222,28 @@ img {
 	margin-left: 35px;
 	font-weight: bold;
 	font-size: 30px;
+}
+
+.botonDecremento{
+	border: none;
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	width: 30px; height: 30px;
+}
+
+.campoCantidad{
+	width: 120px; height: 30px;
+	font-size: 20px;
+	text-align: right;
+}
+
+.botonIncremento{
+	border: none;
+	background-color: darkgreen;
+	color: white;
+	font-size: 20px;
+	width: 30px; height: 30px;
 }
 
 /**** Clases para la información del videojuego ****/

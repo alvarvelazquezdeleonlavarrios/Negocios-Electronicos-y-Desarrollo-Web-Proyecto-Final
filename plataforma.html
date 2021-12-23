@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Estilos/plataforma.css">
+	<title> MaestroGamer.com </title>
+</head>
+<meta charset="UTF-8"> <!-- Corrige errores de caracteres con acentos -->
+
+<body onload="cargarTabla()">
+
+<div class="contenedorPrincipal">
+	<!-- Cabecera de la página -->
+	<div class="contenedorPrincipalCabecera">
+		
+		<div class="contenedorCabecera">
+			<div class="logoPaginaWeb">
+				Integrantes <br>
+				- Flores Gómez Jessica Victoria <br>
+				- Ramírez Martínez Humberto <br>
+				- Velázquez de León Lavarrios Alvar
+			</div>
+
+			<div class="opcionXbox"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(1)"> Xbox </a>  </div>
+			<div class="opcionPlayStation"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(2)"> PlayStation </a> </div>
+			<div class="opcionNintendo"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(3)"> Nintendo </a> </div>
+			<div class="opcionInicio"> <a href="index.html" class="link"> Inicio </a> </div>
+		</div>
+	</div>
+
+	<!-- Tabla de videojuegos de la plataforma -->
+	<div class="contenedorPrincipalTablaVideojuegos">
+		<div class="contenedorTablaVideojuegos">
+			<br> 
+			<div class="subTitulo">
+				<h2> <output id="nombrePlataforma"> </output> </h2> <br>
+			</div>
+
+			<table border="1">
+				
+				<!-- Nombres de columnas -->
+				<tr>
+					<th style="width: 25%; color: purple;"> Portada </th>
+					<th style="width: 50%; color: purple; background-color: rgb(160, 160, 160);"> Nombre </th>
+					<th style="width: 25%; color: purple;"> Precio </th>
+				</tr>
+
+				<!-- Videojuego 1 -->
+				<tr>
+					<th style="width: 25%;"> <a href="videojuego.html"> <img id="imgV1" src="" onclick="seleccionarVideojuego(1)"> </a> </th>
+					<th style="width: 50%; background-color: rgb(160, 160, 160);"> <output id="nombreV1"> </output> </th>
+					<th style="width: 25%; color: red;"> $<output id="precioV1"> </output>MXN </th>
+				</tr>
+
+				<!-- Videojuego 2 -->
+				<tr>
+					<th style="width: 25%;"> <a href="videojuego.html"> <img id="imgV2" src="" onclick="seleccionarVideojuego(2)"> </a> </th>
+					<th style="width: 50%; background-color: rgb(160, 160, 160);"> <output id="nombreV2"> </output> </th>
+					<th style="width: 25%; color: red;"> $<output id="precioV2"> </output>MXN </th>
+				</tr>
+
+				<!-- Videojuego 3 -->
+				<tr>
+					<th style="width: 25%;"> <a href="videojuego.html"> <img id="imgV3" src="" onclick="seleccionarVideojuego(3)"> </a> </th>
+					<th style="width: 50%; background-color: rgb(160, 160, 160);"> <output id="nombreV3"> </output> </th>
+					<th style="width: 25%; color: red;"> $<output id="precioV3"> </output>MXN </th>
+				</tr>
+
+				<!-- Videojuego 4 -->
+				<tr>
+					<th style="width: 25%;"> <a href="videojuego.html"> <img id="imgV4" src="" onclick="seleccionarVideojuego(4)"> </a> </th>
+					<th style="width: 50%; background-color: rgb(160, 160, 160);"> <output id="nombreV4"> </output> </th>
+					<th style="width: 25%; color: red;"> $<output id="precioV4"> </output>MXN </th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+</div>
+<br>
+
+<script type=text/javascript src="Scripts/plataforma.js"> </script>
+</body>
+</html>

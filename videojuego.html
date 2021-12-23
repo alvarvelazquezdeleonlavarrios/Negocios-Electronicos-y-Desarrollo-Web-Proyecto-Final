@@ -20,9 +20,9 @@
 				- Velázquez de León Lavarrios Alvar
 			</div>
 
-			<div class="opcionXbox"> <a href="Xbox.html" class="link"> Xbox </a>  </div>
-			<div class="opcionPlayStation"> <a href="PlayStation.html" class="link"> PlayStation </a> </div>
-			<div class="opcionNintendo"> <a href="Nintendo.html" class="link"> Nintendo </a> </div>
+			<div class="opcionXbox"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(1)"> Xbox </a>  </div>
+			<div class="opcionPlayStation"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(2)"> PlayStation </a> </div>
+			<div class="opcionNintendo"> <a href="plataforma.html" class="link" onclick="seleccionarPlataforma(3)"> Nintendo </a> </div>
 			<div class="opcionInicio"> <a href="index.html" class="link"> Inicio </a> </div>
 		</div>
 	</div>
@@ -50,9 +50,9 @@
 
 			<div class="cantidadVideojuego">
 				<label> Cantidad </label> <br>
-				<input type="button" value="-" onclick="disminuirCantidad()"> 
-				<input type="number" name="cantidadVideojuego" id="cantidad" onchange="obtenerCantidad()">
-				<input type="button" value="+" onclick="aumntarCantidad()">
+				<input type="button" class="botonDecremento" value="-" onclick="disminuirCantidad()">
+				<input type="number" class="campoCantidad" name="cantidadVideojuego" id="cantidad" onchange="obtenerCantidad()">
+				<input type="button" class="botonIncremento" value="+" onclick="aumntarCantidad()">
 			</div>
 		</div>
 	</div>

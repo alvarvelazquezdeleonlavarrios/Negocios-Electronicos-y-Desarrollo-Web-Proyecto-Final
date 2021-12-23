@@ -43,3 +43,31 @@ function disminuirCantidad(){
 		document.getElementById("cantidad").value = cantidad;
 	}
 }
+
+var plataforma;
+
+function seleccionarPlataforma(indice){
+
+	switch (indice){
+		// Xbox
+		case 1:
+			plataforma = 1;
+			break;
+
+		// PlayStation
+		case 2:
+			plataforma = 2;
+			break;
+
+		// Nintendo
+		case 3:
+			plataforma = 3;
+			break;
+
+		default:
+			plataforma = 0;
+			break;
+	}
+
+	sessionStorage.setItem("plataforma", plataforma);
+}
