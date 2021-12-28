@@ -62,7 +62,7 @@ function cargarVideojuego(numero, indice){
 			break;
 
 		case 4:
-			nombre = "Marvel's Spider-Man: Miles Morales A";
+			nombre = "Marvel's Spider-Man: Miles Morales";
 			precio = 1299;
 			imagen = "Imágenes/Spider-Man Miles Morales.jpg";
 			break;
@@ -87,7 +87,7 @@ function cargarVideojuego(numero, indice){
 			break;
 
 		case 8:
-			nombre = "Five Nights at Freddy's: Security Breach B";
+			nombre = "Five Nights at Freddy's: Security Breach";
 			precio = 850;
 			imagen = "Imágenes/Five Nights at Freddy's Security Breach.jpg";
 			break;
