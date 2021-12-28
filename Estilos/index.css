@@ -12,7 +12,7 @@ img {
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
-	grid-template-rows: 80px minmax(52vw, 75vw) minmax(52vw, 75vw) ;
+	grid-template-rows: 80px 47vw 47vw ;
 }
 
 .contenedorPrincipalCabecera{
@@ -45,6 +45,7 @@ img {
 	width: 100%;
 	height: 100%;
 	align-content: center;
+	font-size: 15px;
 }
 
 .logoPaginaWeb>img {	/* Ajusta una imagen dentro de la celda del contenedor para la cabecera */
@@ -218,6 +219,7 @@ img {
 	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Preciojuego1 {
@@ -228,6 +230,7 @@ img {
 	font-weight: bold;
 	color: red;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Infojuego2 {
@@ -236,6 +239,7 @@ img {
 	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Preciojuego2 {
@@ -246,6 +250,7 @@ img {
 	font-weight: bold;
 	color: red;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Infojuego3 {
@@ -254,6 +259,7 @@ img {
 	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Preciojuego3 {
@@ -264,6 +270,7 @@ img {
 	font-weight: bold;
 	color: red;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Infojuego4 {
@@ -272,6 +279,7 @@ img {
 	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Preciojuego4 {
@@ -282,6 +290,7 @@ img {
 	font-weight: bold;
 	color: red;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Infojuego5 {
@@ -290,6 +299,7 @@ img {
 	width: 97%; height: 100%;
 	text-align: center;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
 }
 
 .Preciojuego5 {
@@ -300,4 +310,47 @@ img {
 	font-weight: bold;
 	color: red;
 	background-color: rgba(210, 210, 210, 0.7);
+	font-size: 16px;
+}
+
+
+@media screen and (max-width:800px) {
+
+	.contenedorPrincipal {
+		grid-template-rows: 80px 62vw 62vw ;
+	}
+
+	.subTitulo>h2 { font-size: 18px; }
+
+	/* Cabecera */
+	.logoPaginaWeb { font-size: 10px; }
+	.opcionXbox>a { margin: 30px auto; font-size: 17px; }
+	.opcionPlayStation>a { margin: 30px auto; font-size: 17px; }
+	.opcionNintendo>a { margin: 30px auto; font-size: 17px; }
+	.opcionInicio>a { margin: 30px auto; font-size: 17px; }
+
+	/* Información de los videojuegos */
+
+	.Infojuego1 { font-size: 13px; }
+	.Infojuego2 { font-size: 13px; }
+	.Infojuego3 { font-size: 13px; }
+	.Infojuego4 { font-size: 13px; }
+	.Infojuego5 { font-size: 13px; }
+
+	.Preciojuego1 { font-size: 12px; }
+	.Preciojuego2 { font-size: 12px; }
+	.Preciojuego3 { font-size: 12px; }
+	.Preciojuego4 { font-size: 12px; }
+	.Preciojuego5 { font-size: 12px; }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+
+	.contenedorPrincipal {
+		grid-template-rows: 80px 55vw 55vw ;
+	}
+
+	.logoPaginaWeb { font-size: 12px; }
+
 }

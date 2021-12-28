@@ -1,8 +1,13 @@
-/**** Hoja de estilo para la página videojuego.html ****/
+/**** Hoja de estilo para la página videojuego.php ****/
 
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: center;
 }
 
 /**** Clases contenedor principal ****/
@@ -12,7 +17,7 @@ img {
 	margin:  0 auto;	/* Alinea el contenedor en el centro de la ventana */
 	display: grid;
 
-	grid-template-rows: 80px minmax(85vw, 100vw) minmax(70vw, 100vw);
+	grid-template-rows: 80px 85vw 70vw;
 }
 
 .contenedorPrincipalCabecera{
@@ -123,6 +128,12 @@ img {
 	font-family: Gill Sans, sans-serif;
 }
 
+.selectorUsuario {
+	margin-left: 25%;
+	width: 50%; height: 25px;
+	font-size: 20px;
+}
+
 /**** Clases para la información del videojuego ****/
 
 .contenedorInformacionVideojuego {
@@ -178,7 +189,7 @@ img {
 	border-width: 0px;
 	font-size: 30px;
 	text-align: right;
-	width: 140px; height: 60px;
+	width: 100px; height: 60px;
 }
 
 .desarrolladorVideojuego{
@@ -226,10 +237,14 @@ img {
 
 .botonDecremento{
 	border: none;
-	background-color: red;
+	background-color: rgb(245, 110, 110);
 	color: white;
 	font-size: 20px;
 	width: 30px; height: 30px;
+}
+
+.botonDecremento:hover{
+	background-color: rgb(175, 80, 80);
 }
 
 .campoCantidad{
@@ -240,11 +255,37 @@ img {
 
 .botonIncremento{
 	border: none;
-	background-color: darkgreen;
+	background-color: rgb(95, 225, 150);
 	color: white;
 	font-size: 20px;
 	width: 30px; height: 30px;
 }
+
+.botonIncremento:hover{
+	background-color: rgb(65, 150, 100);
+}
+
+.compra{
+	grid-column-start: 1;	grid-column-end: 3;
+	grid-row-start: 5;	grid-row-end: 6;
+	width: 99%; height: 99%;
+}
+
+.botonCompra{
+	border: none;
+	align-content: center;
+	margin-left: 15%;
+	margin-top: 5%;
+	width: 70%; height: 45%;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgb(110, 210, 250);
+}
+
+.botonCompra:hover{
+	background-color: rgb(90, 170, 200);
+}
+
 
 /**** Clases para la información del videojuego ****/
 
@@ -279,4 +320,79 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50vw;
+}
+
+
+@media screen and (max-width:800px) {
+
+	.contenedorPrincipal {
+		grid-template-rows: 80px 115vw 100vw ;
+	}
+
+	.contenedorTrailerVideojuego>h2 { font-size: 18px; }
+
+	h3 { font-size: 18px; }
+
+	/* Cabecera */
+	.logoPaginaWeb { font-size: 10px; }
+	.opcionXbox>a { margin: 30px auto; font-size: 17px; }
+	.opcionPlayStation>a { margin: 30px auto; font-size: 17px; }
+	.opcionNintendo>a { margin: 30px auto; font-size: 17px; }
+	.opcionInicio>a { margin: 30px auto; font-size: 17px; }
+
+	.selectorUsuario {
+		font-size: 15px;
+	}
+
+	/* Información del videojuego */
+	.nombreVideojuego>input { font-size: 25px; }
+	
+	.precioVideojuego{ font-size: 18px; }
+	.precioVideojuego>input { font-size: 18px; width: 60px; height: 40px; }
+
+	.desarrolladorVideojuego{ font-size: 18px; }
+	.desarrolladorVideojuego>input { font-size: 18px; }
+
+	.plataformaVideojuego{ font-size: 18px; }
+	.plataformaVideojuego>input { font-size: 18px; }
+
+	.cantidadVideojuego{ font-size: 18px; }
+
+	.botonDecremento{
+		font-size: 15px;
+		width: 20px; height: 20px;
+	}
+
+	.campoCantidad{
+		width: 80px; height: 20px;
+		font-size: 15px;
+	}
+
+	.botonIncremento{
+		font-size: 15px;
+		width: 20px; height: 20px;
+	}
+
+	.botonCompra{
+		font-size: 15px;
+	}
+
+	/* Soundtrack del videojuego */
+	.contenedorTrailerVideojuego>output {
+		font-size: 15px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+
+	.contenedorPrincipal {
+		grid-template-rows: 80px 95vw 90vw ;
+	}
+
+	.logoPaginaWeb {
+		font-size: 12px;
+	}
+
 }

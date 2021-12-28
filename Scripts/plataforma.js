@@ -62,7 +62,7 @@ function cargarVideojuego(numero, indice){
 			break;
 
 		case 4:
-			nombre = "Marvel's Spider-Man: Miles Morales";
+			nombre = "Marvel's Spider-Man: Miles Morales A";
 			precio = 1299;
 			imagen = "Imágenes/Spider-Man Miles Morales.jpg";
 			break;
@@ -87,7 +87,7 @@ function cargarVideojuego(numero, indice){
 			break;
 
 		case 8:
-			nombre = "Five Nights at Freddy's: Security Breach";
+			nombre = "Five Nights at Freddy's: Security Breach B";
 			precio = 850;
 			imagen = "Imágenes/Five Nights at Freddy's Security Breach.jpg";
 			break;
@@ -219,7 +219,7 @@ function seleccionarVideojuego(numero){
 			break;
 
 		case '4':
-			nombre = "Marvel's Spider-Man: Miles Morales";
+			nombre = "Marvels Spider-Man: Miles Morales";
 			precio = 1299;
 			imagen = "Imágenes/Spider-Man Miles Morales.jpg";
 			desarrollador = "Sony Interactive Entertainment, Insomniac Games";
@@ -268,7 +268,7 @@ function seleccionarVideojuego(numero){
 			break;
 
 		case '8':
-			nombre = "Five Nights at Freddy's: Security Breach";
+			nombre = "Five Nights at Freddys: Security Breach";
 			precio = 850;
 			imagen = "Imágenes/Five Nights at Freddy's Security Breach.jpg";
 			desarrollador = "Steel Wool Studios, Scottgames";

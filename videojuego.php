@@ -29,6 +29,35 @@
 
 	<!-- Información del videojuego -->
 	<div class="contenedorPrincipalInformacionVideojuego">
+		<form name="Pedido" action="pedido.php" method="post">	<!-- Solicitud SQL mediante PHP a la base de datos -->
+		<br>
+
+		<h3 style="text-align: center;"> Usuario: </h3>
+
+		<!-- Lee de la base de datos cada uno de los usuarios -->
+		<select name="usuario" class="selectorUsuario" id="usuario">
+			<?php
+			// Conexión a la base de datos
+			$bd_conexion = mysqli_connect("localhost", "root", "hola1234", "maestrogamer");  # Usuario, contraseña y base de datos
+
+			if (mysqli_connect_errno()) {
+			  echo "Error al intentar conectarse a la base de datos <br>";
+			  exit();
+			}
+
+			// Consulta a la base de datos
+			$resultado = mysqli_query($bd_conexion, "SELECT * FROM usuario");
+
+			while($renglon = mysqli_fetch_array($resultado)){
+				echo "<option >" . $renglon['nombre'] . "</option>";
+			}
+
+			// Cierre de sesión
+			$resultado->free_result();
+			mysqli_close($bd_conexion);
+		?>
+		</select>
+
 		<div class="contenedorInformacionVideojuego">
 			<div class="imagenVideojuego"> <img id="imagen" src=""> </div>
 
@@ -54,7 +83,12 @@
 				<input type="number" class="campoCantidad" name="cantidadVideojuego" id="cantidad" onchange="obtenerCantidad()">
 				<input type="button" class="botonIncremento" value="+" onclick="aumntarCantidad()">
 			</div>
+
+			<div class="compra">
+				<input type="submit" class="botonCompra" value="Comprar">
+			</div>
 		</div>
+		</form>
 	</div>
 
 	<div class="contenedorPrincipalTrailerVideojuego">
@@ -70,11 +104,6 @@
 			</audio>
 		</div>
 	</div>
-
-	<!--form name="Formulario" method="get">
-		<label> Nombre </label><input type="text" name="nombreVideojuego" id="nombre" readonly> <br>
-		<label> Precio $ </label><input type="number" name="precioVideojuego" id="precio" readonly> <label> MXN </label> <br>
-	</form-->
 
 </div>
 <br>

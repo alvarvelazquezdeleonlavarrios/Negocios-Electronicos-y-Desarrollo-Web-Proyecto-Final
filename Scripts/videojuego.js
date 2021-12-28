@@ -1,4 +1,4 @@
-var nombre, precio, imagen, desarrollador, plataforma, cantidad = 1, trailer, pista, soundtrack;
+var nombre, precio, imagen, desarrollador, plataforma, cantidad, trailer, pista, soundtrack;
 
 function cargarVideojuego() {
 	nombre = sessionStorage.getItem("nombreVideojuego");
@@ -6,6 +6,7 @@ function cargarVideojuego() {
 	imagen = sessionStorage.getItem("imagenVideojuego");
 	desarrollador = sessionStorage.getItem("desarrolladorVideojuego");
 	plataforma = sessionStorage.getItem("plataformaVideojuego");
+	cantidad = 1;
 	trailer = sessionStorage.getItem("trailerVideojuego");
 	pista = sessionStorage.getItem("pista");
 	soundtrack = sessionStorage.getItem("soundtrack");
@@ -15,6 +16,7 @@ function cargarVideojuego() {
 	document.getElementById("imagen").src = imagen;
 	document.getElementById("desarrollador").value = desarrollador;
 	document.getElementById("plataforma").value = plataforma;
+	document.getElementById("cantidad").value = cantidad;
 	document.getElementById("trailer").src = trailer;
 	document.getElementById("pista").value = pista;
 	document.getElementById("soundtrack").src = soundtrack;

@@ -41,7 +41,7 @@ function seleccionarVideojuego(indice) {
 			break;
 
 		case 4:
-			nombre = "Marvel's Spider-Man: Miles Morales";
+			nombre = "Marvels Spider-Man: Miles Morales";
 			precio = 1299;
 			imagen = "Imágenes/Spider-Man Miles Morales.jpg";
 			desarrollador = "Sony Interactive Entertainment, Insomniac Games";
@@ -90,7 +90,7 @@ function seleccionarVideojuego(indice) {
 			break;
 
 		case 8:
-			nombre = "Five Nights at Freddy's: Security Breach";
+			nombre = "Five Nights at Freddys: Security Breach";
 			precio = 850;
 			imagen = "Imágenes/Five Nights at Freddy's Security Breach.jpg";
 			desarrollador = "Steel Wool Studios, Scottgames";
