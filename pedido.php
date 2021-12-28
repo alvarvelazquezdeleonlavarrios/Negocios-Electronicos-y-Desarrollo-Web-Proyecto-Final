@@ -49,21 +49,22 @@
     }
 
     // Inserción a la base de datos
+    date_default_timezone_set('America/Mexico_City');
     $fecha = date("Y-m-d H:i:s"); 
     $resultado = mysqli_query($bd_conexion, "INSERT INTO compra (usuario, videojuego, precio, cantidad, costoTotal, fecha) VALUES ('$usuario', '$videojuego', '$precio', '$cantidad', '$costoTotal', '$fecha')");
 
     // Recibo generado producto de la inserción
-    echo "<br><br> <h2>Recibo generado</h2>";
+    echo "<br> <h2>Recibo generado</h2>";
     echo "Usuario: $usuario <br>";
     echo "Producto: $videojuego <br>";
     echo "Precio: $precio (MXN) <br>";
     echo "Cantidad: $cantidad <br>";
-    echo "<span> Costo total: </span>" . $costoTotal . " (MXN) <br>";
+    echo "<span> Costo total: </span>" . $costoTotal . " (MXN) <br><br>";
 
     // Revisar compras anteriores realizadas por el usuario actual
     $resultado = mysqli_query($bd_conexion, "SELECT * FROM compra where usuario='$usuario'");
 
-    echo "<br> <span> Compras realizadas por el usuario " . $usuario . ": </span> <br> <br>";
+    echo "<br> <span> Compras realizadas por el usuario " . $usuario . ": </span> <br><br>";
     ?>
 
     <div class="contenedorTabla">
