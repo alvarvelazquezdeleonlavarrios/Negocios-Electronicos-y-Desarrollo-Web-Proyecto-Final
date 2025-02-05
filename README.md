@@ -1,5 +1,5 @@
-# NegociosWeb
-Proyecto Final para la asignatura de Negocios Electrónicos y Desarrollo Web
+# Negocios Electrónicos y Desarrollo Web: Proyecto Final
+Proyecto Final para la asignatura de Negocios Electrónicos y Desarrollo Web.
 
 ## Manual de instrucciones
 
